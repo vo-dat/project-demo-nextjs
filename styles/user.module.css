@@ -1,0 +1,11 @@
+.content{
+    border: 1px solid #eaeaea;
+    margin: 1rem 15rem;
+    border-radius: 15px;
+    text-align:center;
+    padding-bottom: 1rem;
+}
+.content:hover{
+    border: 1px solid #000;
+    color:blue;
+}

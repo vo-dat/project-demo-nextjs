@@ -7,6 +7,7 @@ export default ()=>{
          Quay về trang {' '}<Link href="/">
              <a>Home</a>
          </Link>
+         <Link href="/Admin/user/123"><a>Admin</a></Link>
          </p>
 
         <style jsx>{`

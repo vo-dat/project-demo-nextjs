@@ -1,9 +1,10 @@
+import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+const Home:React.FC = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+          
         <h1 className={styles.title}>
         Welcome to {' '}
           <Link href='./first_post'>
@@ -27,16 +29,18 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
+            <Link href="/Admin/user/1">
+            <a className={styles.card}>
+            <h2>User 1 &rarr;</h2>
+            <p>Find in-depth information about Next.js features and API.</p></a>
+            </Link>
+            
+            <Link href="/Admin/user/2">
+            <a className={styles.card}>
+            <h2>User 2 &rarr;</h2>
+            <p>Learn about Next.js in an interactive course with quizzes!</p></a>
+            </Link>
+          
           <a
             href="https://github.com/vercel/next.js/tree/master/examples"
             className={styles.card}
@@ -71,4 +75,6 @@ export default function Home() {
       </footer>
     </div>
   )
+  
 }
+export default Home;
